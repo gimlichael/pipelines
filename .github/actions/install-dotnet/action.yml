@@ -1,0 +1,8 @@
+name: install-dotnet
+runs:
+  using: composite
+  steps:
+  - name: Install current LTS .NET SDK(s)
+    uses: ./.github/actions/install-dotnet-lts
+  - name: Install current STS .NET SDK(s)
+    uses: ./.github/actions/install-dotnet-sts

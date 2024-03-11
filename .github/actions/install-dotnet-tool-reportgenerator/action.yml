@@ -1,0 +1,8 @@
+name: install-dotnet-tool-reportgenerator
+runs:
+  using: composite
+  steps:
+  - name: Install .NET tool ReportGenerator
+    if: runner.os == 'Linux'
+    run: dotnet tool update --global dotnet-reportgenerator-globaltool
+    shell: bash
