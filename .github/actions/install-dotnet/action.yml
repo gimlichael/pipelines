@@ -3,6 +3,6 @@ runs:
   using: composite
   steps:
   - name: Install current LTS .NET SDK(s)
-    uses: ./.github/actions/install-dotnet-lts
+    uses: gimlichael/pipelines/.github/actions/install-dotnet-lts@main
   - name: Install current STS .NET SDK(s)
-    uses: ./.github/actions/install-dotnet-sts
+    uses: gimlichael/pipelines/.github/actions/install-dotnet-sts@main
